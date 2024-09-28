@@ -18,7 +18,7 @@
       class="border-2 border-slate-400 focus:outline-none px-2 py-1 focus:ring-2 focus:ring-offset-4 focus:ring-offset-slate-200 focus:ring-slate-400 rounded-md w-full"
     />
     {#if form?.missing}
-      <p class="font-bold text-red-700 text-sm">Work URL is required!</p>
+      <p class="error-text">Work URL is required!</p>
     {/if}
     <button
       type="submit"

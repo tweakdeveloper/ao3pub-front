@@ -6,3 +6,9 @@
   @apply duration-300;
   @apply transition;
 }
+
+.error-text {
+  @apply font-bold;
+  @apply text-red-700;
+  @apply text-sm;
+}
