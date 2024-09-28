@@ -19,6 +19,8 @@
     />
     {#if form?.missing}
       <p class="error-text">Work URL is required!</p>
+    {:else if form?.invalid}
+      <p class="error-text">Work URL is invalid!</p>
     {/if}
     <button
       type="submit"
