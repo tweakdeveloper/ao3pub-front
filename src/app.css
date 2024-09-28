@@ -7,6 +7,12 @@
   @apply transition;
 }
 
+iconify-icon {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+}
+
 .error-text {
   @apply font-bold;
   @apply text-red-700;

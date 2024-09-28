@@ -10,3 +10,12 @@
 {#if $page.error}
   <p class="error-text">{$page.error.message}</p>
 {/if}
+<form action="/">
+  <button
+    type="submit"
+    class="bg-slate-800 hover:bg-slate-600 border-2 border-slate-400 px-2 py-1 rounded-md text-white w-full"
+  >
+    <span>go home?</span>
+    <iconify-icon icon="octicon:link-24" inline></iconify-icon>
+  </button>
+</form>
