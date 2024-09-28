@@ -7,7 +7,8 @@ export async function load({ url }) {
     redirect(307, '/');
   }
 
-  const workMetadata = await fetch(`/api/work/${workID}/metadata`);
+  const metadataReq = await fetch(`/api/work/${workID}/metadata`);
+  const workMetadata = await metadataReq.text();
 
   return { workID, metadata: workMetadata };
 }
