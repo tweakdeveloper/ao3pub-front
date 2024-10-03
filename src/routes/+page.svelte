@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { enhance } from '$app/forms';
+
   export let form;
 </script>
 
@@ -6,7 +8,7 @@
   <title>ao3pub</title>
 </svelte:head>
 <h1 class="font-bold text-3xl">ao3pub</h1>
-<form method="POST" class="flex flex-col gap-4 w-full lg:w-1/2">
+<form method="POST" class="flex flex-col gap-4 w-full lg:w-1/2" use:enhance>
   <input
     name="workURL"
     placeholder="AO3 work URL"
