@@ -1,5 +1,7 @@
 import { redirect } from '@sveltejs/kit';
 
+import { WorkMetadata } from '$lib/api/work/metadata';
+
 export async function load({ fetch, url }) {
   const workID = url.searchParams.get('work');
 
@@ -8,7 +10,7 @@ export async function load({ fetch, url }) {
   }
 
   const metadataReq = await fetch(`/api/work/${workID}/metadata`);
-  const workMetadata = await metadataReq.text();
+  const workMetadata = WorkMetadata.parse(await metadataReq.json());
 
   return { workID, metadata: workMetadata };
 }
