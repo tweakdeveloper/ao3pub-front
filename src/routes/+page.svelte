@@ -8,6 +8,7 @@
   <title>ao3pub</title>
 </svelte:head>
 <h1 class="font-bold text-3xl">ao3pub</h1>
+<p>To get started, paste the URL (link) of an AO3 work in the box below:</p>
 <form method="POST" class="flex flex-col gap-4 w-full lg:w-1/2" use:enhance>
   <input
     name="workURL"
